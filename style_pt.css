@@ -1,0 +1,102 @@
+* {box-sizing: border-box}
+html,
+body {
+height: 100%;
+width: 100%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .row {
+    width: 70%;
+    height: 200px;
+    display: flex;
+    position: static;
+    justify-content: space-around;
+    align-items: stretch; /*Verschiebung von Elementen auf der Vertikalen*/
+    flex-direction: row-reverse;
+  }
+
+
+ 
+
+
+  /*Italien, .eins*/
+  .green {background-color: #008000; order: 1;}
+  .white {background-color: white;}
+  .red {background-color: #ff0000; order: -1;} 
+  .row1 {width: 70%;
+    height: 200;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    display: flex;}
+
+/*Deutschland*/
+.schwarz {background-color: black; height: 60px;}
+.rot {background-color: #ff0000; height: 60px;}
+.gold {background-color: yellow; height: 60px;} 
+  .row2 {
+    width: 70%;
+    height: 200;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    display: block;
+  }
+
+/*Frankreich*/
+.blau {background-color: blue;}
+.weiß {background-color: white;}
+.rotrot {background-color: #ff0000;} 
+.row3 {
+    width: 70%;
+    height: 200px;
+    display: flex;
+    line-height: normal;
+    justify-content: space-around;
+    align-items: stretch; /*Verschiebung von Elementen auf der Vertikalen*/
+    flex-direction: row-reverse;
+  }
+
+
+
+  .col { /*Spalte*/
+    min-width: 20px;
+    min-height: 20px;
+    margin: 0 auto;
+    
+  }
+   
+  .col { /*Spalte*/
+    min-width: 20px;
+    min-height: 20px;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+   
+
+
+
+  @media (min-width: 200px) {
+      .eins {display: flex;}
+      .zwei {display: none;}  
+      .drei {display: none;}
+    } 
+
+    @media (min-width: 600px) {
+     .eins {display: none;}
+      .zwei {display: flex;}  
+      .drei {display: none;} 
+      }  
+  
+      @media (min-width: 850px) {
+        .eins {display: none;}
+        .zwei {display: none;}  
+        .drei {display: flex;} 
+        }  
+    
